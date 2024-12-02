@@ -1,0 +1,5 @@
+Total entries: 16575
+
+--- Analysis for type: Feature ---
+Total features of this type: 16575
+
