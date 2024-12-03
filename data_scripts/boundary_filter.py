@@ -1,7 +1,7 @@
 import geopandas as gpd
 
 # Load the GeoJSON files
-region_data = gpd.read_file("./data/Providence/raw_providence_places.geojson")  # Your specific data
+region_data = gpd.read_file("./data/Providence/raw_providence_connectors.geojson")  # Your specific data
 boundary_data = gpd.read_file("./data/Providence/providence_boundaries.geojson")  # The boundaries
 
 # Ensure both datasets use the same CRS
@@ -16,6 +16,6 @@ filtered_data = region_data[region_data.geometry.within(boundary_data.unary_unio
 # filtered_data = region_data[region_data.geometry.intersects(boundary_data.unary_union)]
 
 # Save the filtered data to a new GeoJSON file
-filtered_data.to_file("./data/Providence/filtered_providence_places.geojson", driver="GeoJSON")
+filtered_data.to_file("./data/Providence/filtered_providence_connectors.geojson", driver="GeoJSON")
 
 print("Filtered data saved to 'filtered_data.geojson'")
