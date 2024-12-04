@@ -6,8 +6,10 @@ import numpy as np
 
 # Paths
 parquet_folder = './2024-11-19/places/'  # Folder containing Parquet files
-city_geojson_path = './data/Providence/providence_boundaries.geojson'  # GeoJSON file with city boundaries
-output_geojson_path = 'providence_foursquare.geojson'  # Output GeoJSON file
+# city_geojson_path = './data/Providence/providence_boundaries.geojson'  # GeoJSON file with city boundaries
+# output_geojson_path = 'providence_foursquare.geojson'  # Output GeoJSON file
+city_geojson_path = './data/cambridge/cambridge_boundaries.geojson'  # GeoJSON file with city boundaries
+output_geojson_path = 'cambridge_foursquare.geojson'  # Output GeoJSON file
 
 # Load city boundaries
 city_boundary = gpd.read_file(city_geojson_path)
